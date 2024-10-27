@@ -7,13 +7,13 @@ autoload -Uz compinit
 compinit
 
 export ZSH="/Users/magnusstenqvist/.oh-my-zsh"
-source <(kubectl completion zsh)
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+ZSH_THEME="Gnzh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="strug"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,7 +98,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -lah"
 alias ls="ls -lah"
-alias hello="echo 'hello world'"
 
 #Nvim aliases
 alias nvim="vim"
@@ -107,10 +106,19 @@ alias vim="/opt/homebrew/bin/nvim"
 alias nvco="nvim ~/.config/nvim/"
 alias nvc="cd ~/.config/nvim/"
 
+#rust aliases
+alias cg="cargo run"
+
 function mkd() {
   md $1 && cd $_
 }
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
 
