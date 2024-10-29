@@ -25,6 +25,7 @@ wk.add({
 })
 
 return {
+  { "folke/which-key.nvim", lazy = false },
   { "nvim-tree/nvim-tree.lua", enabled = false},
   {
     "stevearc/conform.nvim",
