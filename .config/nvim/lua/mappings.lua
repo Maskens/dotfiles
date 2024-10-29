@@ -12,6 +12,8 @@ map("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code Action" })
 map("n", "<leader>nh", "<cmd>NvCheatsheet<CR>", { desc = "toggle NvCheatsheet" })
 map("n", "<leader>ld", vim.lsp.buf.type_definition, { desc = "Go to type definition" })
 
+map("n", "<leader>lp", vim.diagnostic.open_float, { desc = "Show diagnostic" })
+
 local nomap = vim.keymap.del
 
 nomap("n", "<leader>h")
