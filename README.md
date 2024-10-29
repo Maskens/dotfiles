@@ -3,7 +3,7 @@ My dotfiles
 
 Prerequisites
 
-# Install nerd font for nvim tab bar
+## Install nerd font for nvim tab bar
 
 # Install git
 
