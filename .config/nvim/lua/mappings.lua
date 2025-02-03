@@ -27,7 +27,7 @@ nomap("n", "<leader>rn")
 nomap("n", "<tab>")
 
 -- Remove nvchads default keys
-nomap("n", "<C-n>")
+-- nomap("n", "<C-n>")
 nomap("n", "<C-l>")
 nomap("n", "<C-h>")
 
