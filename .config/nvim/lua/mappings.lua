@@ -25,7 +25,17 @@ nomap("n", "<leader>x") -- buffer close
 nomap("n", "<leader>n")
 nomap("n", "<leader>rn")
 nomap("n", "<tab>")
+
+-- Remove nvchads default keys
 nomap("n", "<C-n>")
+nomap("n", "<C-l>")
+nomap("n", "<C-h>")
+
+-- Set for tmux navigation
+map("n", "<C-l>", "<cmd> TmuxNavigateRight<cr>")
+map("n", "<C-h>", "<cmd> TmuxNavigateLeft<cr>")
+map("n", "<C-j>", "<cmd> TmuxNavigateDown<cr>")
+map("n", "<C-k>", "<cmd> TmuxNavigateUp<cr>")
 
 -- Disable nvchad lsp mappings
 --  nomap("n", "<leader>wa")
