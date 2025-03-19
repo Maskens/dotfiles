@@ -3,7 +3,12 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "clangd", "zls" }
+local servers = {
+  "cssls",
+  "clangd",
+  "zls"
+}
+
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -15,3 +20,11 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.zls.setup {
+  settings = {
+    zls = {
+      zig_exe_path = "/Users/magnusstenqvist/progg/zig/zig-0.14.0/zig",
+    }
+  }
+}
+--
