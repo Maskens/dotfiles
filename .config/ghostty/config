@@ -1,0 +1,9 @@
+font-size = 20
+theme = Banana Blueberry
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+background-opacity = 0.9
+
+shell-integration = fish
+command = /opt/homebrew/bin/fish --login --interactive
