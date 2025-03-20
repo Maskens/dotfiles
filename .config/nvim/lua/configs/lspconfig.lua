@@ -23,7 +23,7 @@ end
 lspconfig.zls.setup {
   settings = {
     zls = {
-      zig_exe_path = "/Users/magnusstenqvist/progg/zig/zig-0.14.0/zig",
+      zig_exe_path = "/Users/magnusstenqvist/.asdf/installs/zig/0.14.0/bin/zig"
     }
   }
 }
