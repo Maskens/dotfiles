@@ -3,7 +3,7 @@ theme = Banana Blueberry
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-background-opacity = 0.9
+#background-opacity = 0.95
 
 shell-integration = fish
 command = /opt/homebrew/bin/fish --login --interactive

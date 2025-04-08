@@ -5,7 +5,7 @@
 ---@type ChadrcConfig
 local M = {
   base46 = {
-    theme = "tokyonight",
+    theme = "gruvbox",
     transparency = true,
   },
   ui = {
@@ -15,7 +15,7 @@ local M = {
     tabufline = {
       enabled = false
     },
-  }
+  },
 }
 
 return M
