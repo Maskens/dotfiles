@@ -7,10 +7,10 @@ return {
     version = "2.3.0",
     dependencies = {
       'saadparwaiz1/cmp_luasnip',
-       'rafamadriz/friendly-snippets',
-      config = function ()
-      end
-    }
+    },
+    config = function ()
+      require("luasnip.loaders.from_vscode").lazy_load({paths = {"./my-snippets/"} })
+    end
   },
   -- autopairing of (){}[] etc
   {
@@ -32,8 +32,6 @@ return {
     config = function()
       -- Set up nvim-cmp.
       local cmp = require'cmp'
-      require("luasnip.loaders.from_vscode").load()
-      require("luasnip.loaders.from_vscode").load("~/.config/nvim/my-snippets/")
 
       cmp.setup({
         snippet = {
