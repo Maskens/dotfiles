@@ -42,6 +42,11 @@ return {
       }
       local lspconfig = require("lspconfig")
 
+      lspconfig.elixirls.setup({
+        cmd = { vim.fn.stdpath("data") .. "/mason/bin/elixir-ls"}
+
+      })
+
       lspconfig.zls.setup({
         settings = {
           zls = {
