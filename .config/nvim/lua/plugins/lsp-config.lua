@@ -84,6 +84,7 @@ return {
       map("n", "gd", vim.lsp.buf.definition, { desc = "Goto definition"})
       map("n", "gi", vim.lsp.buf.implementation, { desc = "Goto implementation" })
       map("n", "<leader>sh", vim.lsp.buf.signature_help, { desc = "Signature help" })
+      map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Diagnostics" })
 
       map("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "Goto type definition" })
       map("n", "gr", vim.lsp.buf.references, { desc = "Type references" })
