@@ -51,7 +51,7 @@ return {
         settings = {
           zls = {
             capabilities = capabilities,
-            zig_exe_path = "/Users/magnusstenqvist/.asdf/installs/zig/0.14.0/bin/zig"
+            zig_exe_path = "/Users/magnusstenqvist/.asdf/shims/zig"
           }
         }
       })

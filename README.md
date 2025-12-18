@@ -6,24 +6,9 @@ My dotfiles
 
 # Install git
 
-    brew install git
-
 # Install stow
 
     brew install stow
-
-# Install iterm2 using brew   
-
-
-Download and set iterm2 theme
-https://github.com/rojadesign/iTerm2-Tokyo-Night-Color-Theme-by-rojadesign
-
-## Nerd font
-Install nerd font for nvim tab bar
-
-    brew install font-hack-nerd-font
-
-Download nerd font https://www.nerdfonts.com/font-downloads and set it in iterm2
 
 # Clone this repo 
 ## In your home dir
@@ -36,3 +21,7 @@ Download nerd font https://www.nerdfonts.com/font-downloads and set it in iterm2
 # Tmux
 ## type this in terminal if tmux is already running, installs tpm among others
     tmux source ~/.tmux.conf
+
+
+# Todo
+## Add Fish conf and remove zsh!
