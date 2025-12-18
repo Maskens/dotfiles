@@ -1,6 +1,6 @@
 font-size = 20
-#theme = Banana Blueberry
-theme = Gruvbox Dark Hard
+theme = Monokai Remastered
+#theme = Gruvbox Dark Hard
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
