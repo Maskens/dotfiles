@@ -1,5 +1,6 @@
 font-size = 20
-theme = Banana Blueberry
+#theme = Banana Blueberry
+theme = Gruvbox Dark Hard
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
