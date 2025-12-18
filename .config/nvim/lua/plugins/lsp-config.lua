@@ -40,14 +40,11 @@ return {
           },
         },
       }
-      local lspconfig = require("lspconfig")
-
-      lspconfig.elixirls.setup({
+      vim.lsp.config('elixirls', {
         cmd = { vim.fn.stdpath("data") .. "/mason/bin/elixir-ls"}
-
       })
 
-      lspconfig.zls.setup({
+      vim.lsp.config('zls', {
         settings = {
           zls = {
             capabilities = capabilities,
@@ -56,7 +53,7 @@ return {
         }
       })
 
-      lspconfig.lua_ls.setup({
+      vim.lsp.config('lua_ls', {
         capabilities = capabilities,
         settings = {
           Lua = {
