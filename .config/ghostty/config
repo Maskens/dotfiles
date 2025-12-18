@@ -6,6 +6,8 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 background-opacity = 0.95
 background-blur = true
+background-image = ~/cyberpunk-nun.jpg
+background-image-opacity = 0.05
 
 shell-integration = fish
 command = /opt/homebrew/bin/fish --login --interactive
