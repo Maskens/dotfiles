@@ -24,4 +24,4 @@ My dotfiles
 
 
 # Todo
-## Add Fish conf and remove zsh!
+Add Fish conf and remove zsh!
