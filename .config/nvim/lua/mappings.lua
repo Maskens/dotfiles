@@ -31,7 +31,7 @@ map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find
 map(
   "n",
   "<leader>fa",
-  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
+  "<cmd>Telescope find_files follow=true no_ignore=false hidden=true<CR>",
   { desc = "telescope find all files" }
 )
 
