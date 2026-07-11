@@ -39,6 +39,22 @@ return {
             require('luasnip').lsp_expand(args.body)
           end,
         },
+        view = {
+          entries = { name = 'native', selection_order = 'near_cursor'}
+
+        };
+        formatting = {
+          format = function(entry, vim_item)
+            -- Set the maximum width for the completion item
+            local max_width = 40 
+
+            if string.len(vim_item.abbr) > max_width then
+              vim_item.abbr = string.sub(vim_item.abbr, 1, max_width) .. '...'
+            end
+
+            return vim_item
+          end
+        },
         window = {
           completion = cmp.config.window.bordered(),
           documentation = cmp.config.window.bordered(),
