@@ -50,6 +50,7 @@ return {
           zls = {
             capabilities = capabilities,
             zig_exe_path = "/Users/magnusstenqvist/.asdf/installs/zig/0.16.0/bin/zig"
+            --zig_exe_path = "/Users/magnusstenqvist/progg/zig/zig-aarch64-macos-0.17.0-dev.2015+3fdcbc03d/zig"
           }
         }
       })
